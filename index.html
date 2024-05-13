@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="./assets/images/favicon.png"
     />
     <title>Recipe page</title>
 
@@ -27,6 +27,9 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -105,30 +108,37 @@
       </div>
       <div class="recipe-nutrition">
         <div class="nutrition title-style">Nutrition</div>
-        <p>
+        <p class="nutrition-paragraph">
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
 
-        <div class="recipe-nutrition-table">
-          <div class="calories-line">
-            <div class="text"></div>
-            <div class="value"></div>
+        <div class="recipe-nutrition-table container-fluid">
+          <div class="calories-line row">
+            <div class="text col-6 pb-2">Calories</div>
+            <div class="value col-6 pb-2">277kcal</div>
+            <div class="horizontal-rule"></div>
           </div>
-          <div class="carbs-line">
-            <div class="text"></div>
-            <div class="value"></div>
+
+          <div class="carbs-line row">
+            <div class="text col-6 pb-2 pt-2">Carbs</div>
+            <div class="value col-6 pb-2 pt-2">0g</div>
+            <div class="horizontal-rule"></div>
           </div>
-          <div class="protein-line">
-            <div class="text"></div>
-            <div class="value"></div>
+          <div class="protein-line row">
+            <div class="text col-6 pb-2 pt-2">Protein</div>
+            <div class="value col-6 pb-2 pt-2">20g</div>
+            <div class="horizontal-rule"></div>
           </div>
-          <div class="fat-line">
-            <div class="text"></div>
-            <div class="value"></div>
+          <div class="fat-line row">
+            <div class="text col-6 pb-2 pt-2">Fat</div>
+            <div class="value col-6 pb-2 pt-2">22g</div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Bootstrap JS file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
