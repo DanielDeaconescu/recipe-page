@@ -11,4 +11,131 @@
 
 body {
   box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--neutral-eggshell);
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+.recipe {
+  max-width: 650px;
+  background-color: var(--neutral-white);
+  padding: 35px;
+}
+
+.recipe-introduction {
+  margin-bottom: 40px;
+}
+
+.recipe-introduction p {
+  color: var(--neutral-wenge-brown);
+}
+
+.recipe-title {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+}
+
+.recipe-image-inner {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+/* Preparation section */
+
+.recipe-preparation {
+  background-color: hsl(330, 100%, 98%);
+  padding: 22px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.preparation {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-dark-raspberry);
+}
+
+.preparation-list {
+  color: var(--neutral-wenge-brown);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 20px;
+}
+
+.preparation-list li {
+  padding-left: 20px;
+}
+
+.preparation-list li::marker {
+  color: var(--primary-dark-raspberry);
+}
+
+/* Ingredients section */
+
+.title-style {
+  font-size: 26px;
+  font-family: "Young Serif", sans-serif;
+  color: var(--primary-nutmeg);
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--neutral-wenge-brown);
+  margin-bottom: 30px;
+}
+
+.ingredients-list li {
+  padding-left: 20px;
+}
+
+.ingredients-list li::marker {
+  color: var(--primary-nutmeg);
+}
+
+.h-rule {
+  border-color: var(--neutral-white);
+}
+
+.horizontal-rule {
+  height: 1px;
+  background-color: var(--neutral-light-grey);
+}
+
+/* Instructions styling */
+
+.instructions {
+  margin-top: 30px;
+}
+
+.recipe-instructions {
+  color: var(--neutral-wenge-brown);
+}
+
+.instructions-list {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instructions-list li::marker {
+  color: var(--primary-nutmeg);
+  font-weight: 700;
+}
+
+.instructions-list li:last-child {
+  margin-bottom: 10px;
+}
+
+/* Nutrition styling */
+
+.nutrition {
+  margin-top: 30px;
 }
