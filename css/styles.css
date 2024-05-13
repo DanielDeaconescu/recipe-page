@@ -136,6 +136,10 @@ body {
 
 /* Nutrition styling */
 
+.recipe-nutrition {
+  color: var(--neutral-wenge-brown);
+}
+
 .nutrition {
   margin-top: 30px;
 }
